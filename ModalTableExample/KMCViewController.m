@@ -45,7 +45,6 @@
 - (void)itemSelectedatRow:(NSInteger)row
 {
   NSLog(@"row %lu selected", (unsigned long)row);
-  
   [self.stateButton setTitle:[self.statesArray objectAtIndex:row] forState:UIControlStateNormal];
 }
 

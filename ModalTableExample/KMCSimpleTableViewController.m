@@ -8,10 +8,6 @@
 
 #import "KMCSimpleTableViewController.h"
 
-@interface KMCSimpleTableViewController ()
-
-@end
-
 @implementation KMCSimpleTableViewController
 
 #pragma mark - Table view data source
@@ -33,7 +29,6 @@
   if (!cell) {
     cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellIdentifier];
   }
-  
   cell.textLabel.text = [self.tableData objectAtIndex:indexPath.row];
   
   return cell;
